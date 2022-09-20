@@ -27,7 +27,7 @@ background-color: #616A6B;
 section{
 
 width: 100%;
-height:500px;
+height:650px;
 border-bottom: 1px solid black;
 background-color: #ECF0F1;
 }
@@ -36,5 +36,22 @@ footer{
 width: 100%;
 height: 100px;
 background-color: black;
+}
+
+img{
+    width: 16.4%;
+    height: 214px;
+  
+}
+
+.jordan,.adidas.vans{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    gap: 1;
+}
+
+.jordan,.adidas{
+    border-bottom: 1px solid black;
 }
 

@@ -70,6 +70,25 @@ const precioTotal= carrito.reduce((acc,producto)=> acc + (producto.precio),0)
 alert("El precio total de la compra es: $"+ precioTotal)
 
 
+
+
+let seccionCompra = document.createElement("section");
+
+seccionCompra.innerHTML = `<h2> Gracias por realizar su compra!</h2>
+                           <h2> Descripcion de compra: </h2>`+ JSON.stringify(carrito, null, 4);
+
+document.body.appendChild(seccionCompra);
+
+
+
+let info = document.getElementById('informacion');
+
+info = document.createElement("div");
+
+info.innerHTML = `<p>Conforme a su compra realizada usted recibira el mejor producto en la puerta de su casa</p>`
+
+document.body.appendChild(info);
+
 }
 
 if (bienvenida == "ESC"){
