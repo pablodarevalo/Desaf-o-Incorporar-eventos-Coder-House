@@ -55,3 +55,24 @@ img{
     border-bottom: 1px solid black;
 }
 
+#contacto{
+width: 100%;
+display: flex;
+justify-content: space-around;
+margin-bottom: 10px;
+
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+#view{
+
+border: 1px solid black;
+width: 400px;
+height: 450px;
+    
+}

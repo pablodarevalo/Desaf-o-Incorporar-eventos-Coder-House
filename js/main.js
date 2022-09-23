@@ -1,4 +1,4 @@
-
+/*
 let bienvenida= "ACEPTAR";
 let carrito = [];
 let opcion = "SI";
@@ -95,7 +95,21 @@ if (bienvenida == "ESC"){
 alert("Gracias por entrar");
 }
 
+*/
 
+/*PARTE DE EVENTOS, FORMULARIOS */
 
+let name = document.getElementById("nombre");
+let surname = document.getElementById("apellido");
+let mail = document.getElementById("email");
+let boton = document.getElementById("btn");
+let space = document.getElementById("view");
 
+boton.addEventListener("click",(e)=>{
+e.preventDefault();
 
+alert("Excelente "+ name.value+" "+surname.value+", en los proximos minutos estaras recibiendo un email con informacion al mail: "+ mail.value);
+
+space.innerHTML =`<h3>Informacion enviada con exito!<h3/>`+`<br>`+ "El nombre enviado fue: " + name.value + `<br>`+"El apellido enviado fue: " + surname.value +`<br>`+ "Email: "+ mail.value+`<br>`+"En caso de existir algun error en el formulario ya enviado, solo vuelva a completar el mismo, con el mismo email, de esa manera podremos solucionar los errores, Muchas Gracias";
+
+});
